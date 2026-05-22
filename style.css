@@ -1,0 +1,183 @@
+.head {
+    font-size: 45px;
+    height:60px;
+    background-color: lightpink;
+    color:rgb(251, 251, 251);
+    display:flex;
+    justify-content: center;
+    border:5px solid black;
+}
+
+#wholepage {
+    background-image: url("bi.jpg");
+    background-size: cover;
+   
+}
+
+#container {
+    display:flex;
+    justify-content: center;
+   
+}
+
+#rock:hover {
+    cursor: pointer;
+    border-color: black;
+}
+
+#paper:hover {
+    cursor: pointer;
+    border-color: black;
+}
+
+#scissors:hover {
+    cursor: pointer;
+    border-color: black;
+}
+
+#rock {
+    height:250px;
+    width:250px;
+    border:5px solid white;
+    margin:80px;
+    background-image:url("rock.png") ;
+    background-size: cover;
+     background-position: center;
+     border-radius: 50%;
+     object-fit: cover;
+}
+
+#paper {
+    height:250px;
+    width:250px;
+    border:5px solid white;
+    margin:80px;
+     background-image:url("paper.png") ;
+    background-size:cover;
+    background-position: center;
+     border-radius: 50%;
+
+}
+
+#scissors {
+    height:250px;
+    width:250px;
+    border:5px solid white;
+    margin:80px;
+     background-image:url("scissors.png") ;
+    background-size: cover;
+     background-position: center;
+      border-radius: 50%;
+
+}
+
+#scores {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pname {
+    margin:5px;
+}
+
+#compscore {
+   margin:30px;
+   color: black;
+}
+
+#userscore {
+   margin:30px;
+    color: black;
+   
+}
+
+#comp {
+    border:5px solid black;
+     margin: 10px;
+     border-radius: 20px;
+}
+
+#user {
+     border:5px solid black;
+     margin: 10px;
+      border-radius: 20px;
+}
+
+.startgame {
+    display: flex;
+   justify-content: center;
+   font-size: 45px;
+   margin: auto;
+   margin-bottom: 20px;
+   width:660px;
+   background-color: lightcoral;
+   color: white;
+   border: 5px solid black;
+}
+
+.restart {
+    display:flex;
+    justify-content:center;
+    font-size: 45px;
+   margin:auto;
+   width:460px;
+    background-color: black;
+    color:white;
+    border-radius:10%;
+    border: 5px solid palevioletred;
+    
+}
+
+.restart:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .option {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option {
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+    }
+
+    #scores {
+        font-size: 25px;
+        flex-direction: column;
+    }
+
+    .startgame {
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .restart {
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.option {
+    transition: all 0.2s ease;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
